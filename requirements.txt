@@ -1,0 +1,4 @@
+# Using requirements.txt instead of setup.py since streamlit finds it straight away
+openai==0.25.0
+fuzzywuzzy==0.18.0
+streamlit==1.15.1

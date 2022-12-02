@@ -24,14 +24,13 @@ bot = [i for i in participants if i.name == bot_name][0]
 if 'text' not in st.session_state:
     st.session_state.text = ''
 
-if 'api_key' not in st.session_state:
+if len(st.session_state.api_key) < 5:
     try:
         with open('talk_with_ai/api_key', 'r') as f:
             st.session_state.api_key = f.read()
             print("Api key was read from file")
-    except:
-        print("No API key provided")
-        raise Exception
+    except Exception as msg:
+        print(f"Seems no API key provided, error: {msg}")
 
 
 with st.container():
