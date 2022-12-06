@@ -1,5 +1,6 @@
 ## talk-with-ai
-Chat with bots with different personalities using various language models
+Chat with bots with different personalities using various language models.
+App is live at: https://simoncelinder-talk-with-ai-talk-with-aiapp-q5boul.streamlit.app/
 
 
 ### 1. Set up a virtualenv, activate it and install dependencies

@@ -13,6 +13,8 @@ st.session_state.api_key = st.text_input(
     label="Paste your OpenAI api key unless running locally and reading from file"
 )
 
+st.caption('Source code in git: https://github.com/simoncelinder/talk-with-ai')
+
 bot_name = st.selectbox(
     label="Select bot to talk to",
     options=[i.name for i in participants if i.name not in ['Me', 'Moderator']]
@@ -34,7 +36,7 @@ if len(st.session_state.api_key) < 5:
 
 
 with st.container():
-    human_reply = st.text_area(label="Write answer")
+    human_reply = st.text_area(label="Write conversation starter or answer ongoing conversation")
 
 if len(human_reply) > 0:
 
