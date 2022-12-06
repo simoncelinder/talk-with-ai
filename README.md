@@ -14,7 +14,7 @@ pip install -r requirements.txt
 Paste your api key into a pure text file "api_key" inside the talk_with_ai folder, it will be gitignored
 
 
-### 2. Open the app locally
+### 3. Open the app locally
 ```bash
 streamlit run talk_with_ai/app.py
 ```
