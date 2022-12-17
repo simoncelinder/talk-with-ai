@@ -1,4 +1,18 @@
 # Using requirements.txt instead of setup.py since streamlit finds it straight away
+
+# Frontend
+streamlit==1.15.1
+
+# Pure text chat requirements
 openai==0.25.0
 fuzzywuzzy==0.18.0
-streamlit==1.15.1
+
+# For Text-To-Speech
+# On M1, needed to run arch -x86_64 brew install portaudio first (before pyaudio), See fix for brew install trouble for M1:
+# https://stackoverflow.com/questions/64963370/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-usr
+pyaudio==0.2.12
+playsound==1.3.0
+gtts==2.3.0
+#SpeechRecognition==3.8.1  # Not needed?
+
+# pip3 install PyObjC - Was needed locally else python2 reference trouble

@@ -132,3 +132,6 @@ dmypy.json
 .idea/
 .pyenv/
 talk_with_ai/local
+/.silicon_env/
+
+*.mp3
