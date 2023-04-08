@@ -1,6 +1,6 @@
 ## talk-with-ai
 Chat with bots with different personalities using various language models.
-App is live at: https://simoncelinder-talk-with-ai-talk-with-aiapp-q5boul.streamlit.app/
+Note that this project was done before ChatGPT came.
 
 
 ### 1. Set up a virtualenv, activate it and install dependencies
